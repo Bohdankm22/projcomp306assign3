@@ -13,7 +13,7 @@ public class AboutController {
     @Value("${about.message:test}")
     private String message = "Hello World";
 
-    @RequestMapping("/")
+    @RequestMapping("/about")
     public String welcome(Map<String, Object> model) {
         model.put("message", this.message);
         return "welcome";
